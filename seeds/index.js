@@ -13,3 +13,4 @@ const seedAll = async () => {
 };
 
 seedAll();
+//index that ties them all together
