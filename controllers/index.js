@@ -6,7 +6,6 @@ const dashBoard = require('./dashboardRoutes');
 
 router.use('/api', apiRoutes);
 router.use('/', homeRoutes);
-router.use('/', dashBoard);
-//^does this look right?
+router.use('/dashboard', dashBoard);
 
 module.exports = router;

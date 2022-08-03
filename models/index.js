@@ -17,6 +17,11 @@ Comment.belongsTo(User,{
     onDelete: 'CASCADE'
 });
 
+// Comment.belongsTo(Post,{
+//     foreignKey: 'upostId',
+//     onDelete: 'CASCADE'
+// });
+
 module.exports = {
     User,
     Comment,
