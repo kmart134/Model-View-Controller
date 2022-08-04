@@ -1,5 +1,25 @@
 //sequelize
-//body, type string, allow null false
- 
+const sequelize = require('../config/connection.js');
 
-// module.export= comment
+class Comment extends Model {}
+
+Comment.init(
+//body, type string, allow null false
+  {
+    body: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    }
+  },
+  {
+    sequelize,
+    timestamps: false,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'category',
+  }
+);
+
+
+
+module.exports = Comment;
